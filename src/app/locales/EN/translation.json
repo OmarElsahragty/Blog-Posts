@@ -1,0 +1,13 @@
+{
+  "and": "and",
+  "server-error": "Oops! Something went wrong!",
+
+  "no-data": "No data found",
+
+  "required-tags": "Tags parameter is required",
+  "invalid-tags": "Tags parameter is invalid",
+
+  "invalid-sort": "SortBy parameter is invalid",
+
+  "invalid-direction": "Direction parameter is invalid"
+}

@@ -1,0 +1,19 @@
+{
+	"id": "08b0ec9d-ef1b-4329-b93f-fa9bb3e82a49",
+	"name": "Blog Posts",
+	"values": [
+		{
+			"key": "base-URL",
+			"value": "34.74.88.81/Blog-Posts/api",
+			"enabled": true
+		},
+		{
+			"key": "accept-language",
+			"value": "EN",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2021-08-11T17:51:39.634Z",
+	"_postman_exported_using": "Postman/8.10.0"
+}

@@ -1,0 +1,76 @@
+swagger: "2.0"
+info:
+  version: "1.0"
+  title: Blog Posts
+  contact: {}
+host: 34.74.88.81
+basePath: /Blog-Posts/
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /api/ping:
+    get:
+      description: "accept-language header acceptable fields are: EN, FR, AR"
+      summary: ping
+      tags:
+        - Misc
+      operationId: ping
+      deprecated: false
+      produces:
+        - application/json
+      parameters:
+        - name: accept-language
+          in: header
+          required: false
+          type: string
+          description: ""
+      responses:
+        "200":
+          description: ""
+          headers: {}
+  /api/posts:
+    get:
+      description: "accept-language header acceptable fields are: EN, FR, AR"
+      summary: posts
+      tags:
+        - Misc
+      operationId: posts
+      deprecated: false
+      produces:
+        - application/json
+      parameters:
+        - name: tags
+          in: query
+          required: true
+          type: string
+          description: A comma separated list of tags.
+        - name: sortBy
+          in: query
+          required: false
+          type: string
+          description: |-
+            The field to sort the posts by. The acceptable fields are: 
+            id {Default}   -   reads   -   likes-   popularity
+        - name: direction
+          in: query
+          required: false
+          type: string
+          description: |-
+            The direction for sorting. The acceptable fields are:
+            asc {Default}   -   desc
+        - name: accept-language
+          in: header
+          required: false
+          type: string
+          description: ""
+      responses:
+        "200":
+          description: ""
+          headers: {}
+tags:
+  - name: Misc
+    description: ""

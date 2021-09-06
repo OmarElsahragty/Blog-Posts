@@ -1,0 +1,13 @@
+{
+  "and": "et",
+  "server-error": "Oups! Quelque chose s'est mal passé !",
+
+  "no-data": "Aucune donnée disponible",
+
+  "required-tags": "Le paramètre de balises est requis",
+  "invalid-tags": "Le paramètre des balises n'est pas valide",
+
+  "invalid-sort": "Le paramètre sortBy n'est pas valide",
+
+  "invalid-direction": "le paramètre de direction n'est pas valide"
+}

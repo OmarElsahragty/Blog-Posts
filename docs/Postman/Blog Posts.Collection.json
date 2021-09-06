@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "e228dd0b-49df-4b87-ad73-26f3302c6922",
+		"name": "Blog Posts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ping",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept-language",
+						"value": "{{accept-language}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base-URL}}/ping",
+					"host": [
+						"{{base-URL}}"
+					],
+					"path": [
+						"ping"
+					]
+				},
+				"description": "accept-language header acceptable fields are: EN, FR, AR"
+			},
+			"response": []
+		},
+		{
+			"name": "posts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept-language",
+						"value": "{{accept-language}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base-URL}}/posts?tags=science,tech&sortBy=id&direction=desc",
+					"host": [
+						"{{base-URL}}"
+					],
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "tags",
+							"value": "science,tech",
+							"description": "A comma separated list of tags."
+						},
+						{
+							"key": "sortBy",
+							"value": "id",
+							"description": "The field to sort the posts by. The acceptable fields are: \nid {Default}   -   reads   -   likes-   popularity"
+						},
+						{
+							"key": "direction",
+							"value": "desc",
+							"description": "The direction for sorting. The acceptable fields are:\nasc {Default}   -   desc"
+						}
+					]
+				},
+				"description": "accept-language header acceptable fields are: EN, FR, AR"
+			},
+			"response": []
+		}
+	]
+}
